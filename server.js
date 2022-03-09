@@ -5,7 +5,7 @@ dotenv.config()
 
 const { connectDB } = require('./database/connection')
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 
 connectDB().then(() => {
     console.log('DB connection successful')
